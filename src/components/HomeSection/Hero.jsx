@@ -1,5 +1,5 @@
-import HeroImage from "../assets/icons/restauranfood.jpg";
-import "./styles/Hero.css";
+import HeroImage from "../../assets/icons/restauranfood.jpg";
+import "./Hero.css";
 // import { Link } from "react-router-dom";
 
 const Hero = () => {
