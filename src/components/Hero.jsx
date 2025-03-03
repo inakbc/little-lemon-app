@@ -1,4 +1,4 @@
-import HeroImage from "./icons_assets/restauranfood.jpg";
+import HeroImage from "../assets/icons/restauranfood.jpg";
 import "./styles/Hero.css";
 // import { Link } from "react-router-dom";
 

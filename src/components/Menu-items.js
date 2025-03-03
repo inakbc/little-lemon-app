@@ -1,6 +1,6 @@
-import Special1 from "./icons_assets/greek salad.jpg";
-import Special2 from "./icons_assets/bruchetta.svg";
-import Special3 from "./icons_assets/lemon dessert.jpg";
+import Special1 from "../assets/icons/greek_salad.jpg";
+import Special2 from "../assets/icons/bruchetta.svg";
+import Special3 from "../assets/icons/lemon_dessert.jpg";
 
 const specialMenu = [
     {
