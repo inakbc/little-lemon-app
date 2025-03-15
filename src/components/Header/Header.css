@@ -1,18 +1,15 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
 }
-
 header {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 510;
+    font-family: Karla, sans-serif;
 }
 
 .logo img {
