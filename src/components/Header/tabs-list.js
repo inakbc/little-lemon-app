@@ -15,12 +15,12 @@ export const DEFAULT_TABS = [
         url: "/reservations",
         title: "Reservations",
     },
-    {
-        url: "/order-online",
-        title: "Order Online",
-    },
-    {
-        url: "/login",
-        title: "Login",
-    },
+    // {
+    //     url: "/order-online",
+    //     title: "Order Online",
+    // },
+    // {
+    //     url: "/login",
+    //     title: "Login",
+    // },
 ];
