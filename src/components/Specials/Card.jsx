@@ -1,19 +1,21 @@
 import "./SpecialMenu.css";
 
 const Card = ({ image, title, price, description }) => (
-    <div className="special-menu-card">
-        <div className="image-container">
-            <img src={image} alt={title} />
-        </div>
+    <div className="special-card">
+        {/* <div className="image-container"> */}
+        <img className="special-image" src={image} alt={title} />
+        {/* </div> */}
+        <div className="special-info">
+            <div className="special-header">
+                <h3 className="special-name">{title}</h3>
+                <span className="special-price">$ {price}</span>
+            </div>
 
-        <div className="card-title">
-            <h3>{title}</h3>
-            <p>Price: {price}</p>
+            <p className="special-description">{description}</p>
+            <a href="/" className="order-now-button">
+                Order Now
+            </a>
         </div>
-        <div>
-            <p>{description}</p>
-        </div>
-        <button className="order-now-button">Order Now</button>
     </div>
 );
 

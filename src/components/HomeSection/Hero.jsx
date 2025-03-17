@@ -6,22 +6,22 @@ const Hero = () => {
     return (
         <>
             <div className="hero-section-container">
-                <div className="section-left">
-                    <h1>Little Lemon</h1>
-                    <h2>Chicago</h2>
-                    <p>
+                <div className="hero-content">
+                    <h1 className="hero-title">Little Lemon</h1>
+                    <h2 className="hero-location">Chicago</h2>
+                    <p className="hero-description">
                         We are a family owned Mediterranean restaurant, focused
                         on traditional recipes served with a modern twist.
                     </p>
 
                     {/* <Link to="/reservations"> */}
-                    <button id="button" to="/reservations">
+                    <button className="hero-button" to="/reservations">
                         Reserve a Table
                     </button>
                     {/* </Link> */}
                 </div>
 
-                <div className="section-right">
+                <div className="hero-image">
                     <img src={HeroImage} alt="restaurantFood" />
                 </div>
             </div>

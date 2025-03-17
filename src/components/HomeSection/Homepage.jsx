@@ -1,9 +1,5 @@
 import Hero from "./Hero";
 function Homepage() {
-    return (
-        <div>
-            <Hero />
-        </div>
-    );
+    return <Hero />;
 }
 export default Homepage;
