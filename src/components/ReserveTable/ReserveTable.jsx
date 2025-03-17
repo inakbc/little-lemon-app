@@ -27,7 +27,7 @@ const ReserveTable = () => {
         <div className="reservation-container">
             <div className="reservation-card">
                 <div className="reservation-content">
-                    <div className="header">
+                    <div className="header-title">
                         <h2 className="title">Little Lemon</h2>
                         <h3 className="title-chicago">Chicago</h3>
                     </div>
