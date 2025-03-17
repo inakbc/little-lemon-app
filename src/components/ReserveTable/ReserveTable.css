@@ -20,15 +20,6 @@
     padding: 24px;
 }
 
-.header {
-    /* display: flex;
-    flex-direction: column; */
-}
-
-/* .logo {
-    height: 32px;
-} */
-
 .title {
     font-weight: bold;
     color: #ffd700;
@@ -47,10 +38,13 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-right: 15px;
 }
 
 .image {
-    min-width: 100px;
+    min-width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .subtitle {
@@ -108,4 +102,29 @@
     /* text-align: center; */
     justify-content: center;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .reservation-card {
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .reserve-button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
