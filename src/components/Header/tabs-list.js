@@ -1,26 +1,18 @@
 export const DEFAULT_TABS = [
     {
-        url: "/home",
+        url: "/#home",
         title: "Home",
     },
     {
-        url: "/about",
+        url: "/#about",
         title: "About",
     },
     {
-        url: "/menu",
+        url: "/#menu",
         title: "Menu",
     },
     {
-        url: "/reservations",
-        title: "Reservations",
+        url: "/reserve",
+        title: "Reserve",
     },
-    // {
-    //     url: "/order-online",
-    //     title: "Order Online",
-    // },
-    // {
-    //     url: "/login",
-    //     title: "Login",
-    // },
 ];

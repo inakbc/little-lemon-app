@@ -2,13 +2,19 @@ body {
     margin: 0;
 }
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
     background-color: white;
+    transition: transform 0.3s ease;
+    z-index: 999;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 14px 40px;
-    background-color: white;
-    margin: 10px 240px;
+    justify-content: center;
+    gap: 60px;
+    /* padding: 14px 60px; */
+    /* margin: 0px 10px; */
     color: black;
     font-size: 16px;
     font-weight: 510;
@@ -20,18 +26,6 @@ body {
     align-items: center;
 }
 
-/* .header {
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    background-color: #3f4a39;
-    justify-content: center;
-} */
-
-/* .logo {
-    display: flex;
-} */
-
 .logo img {
     width: 250px;
     height: 80px;
@@ -41,8 +35,6 @@ body {
     display: flex;
     gap: 25px;
     list-style: none;
-    /* padding: 0;
-    margin: 0; */
 }
 
 .nav ul {
@@ -99,9 +91,66 @@ body {
     height: 34px;
 }
 
-/* Responsive Design */
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.header.show {
+    transform: translateY(0);
+}
+
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
+    .header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+        margin: 10px;
+    }
     .nav {
-        display: none;
+        display: none; /* Hide the nav by default */
+    }
+
+    .nav.open {
+        display: flex; /* Show nav when open */
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .header-actions {
+        display: none; Hide cart and button in mobile view
+    } */
+
+    .logo img {
+        width: 210px;
+        height: 70px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
     }
 }
