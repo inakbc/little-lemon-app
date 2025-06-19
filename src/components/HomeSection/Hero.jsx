@@ -1,6 +1,6 @@
 import HeroImage from "../../assets/icons/restauranfood.jpg";
 import "./Hero.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -14,11 +14,11 @@ const Hero = () => {
                         on traditional recipes served with a modern twist.
                     </p>
 
-                    {/* <Link to="/reservations"> */}
-                    <button className="hero-button" to="/reservations">
-                        Reserve a Table
-                    </button>
-                    {/* </Link> */}
+                    <Link to="/reserve">
+                        <button className="hero-button" aria-label="On Click">
+                            Reserve a Table
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="hero-image">
